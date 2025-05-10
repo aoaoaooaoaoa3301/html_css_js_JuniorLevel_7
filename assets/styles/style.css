@@ -1,0 +1,177 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@font-face {
+    font-family: 'PlusJakarta';
+    src: url(../fonts/PlusJakartaSans-VariableFont_wght.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'PlusJakarta';
+}
+body {
+    background-color: hsl(202, 86%, 94%);
+}
+h1 {
+    font-weight: 600;
+    font-size: 28px;
+}
+a {
+    color: hsl(200, 24%, 40%);
+}
+p {
+    font-size: 16px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.h1-leftSide {
+    color: hsl(202, 55%, 16%);
+}
+.h1-rightSide {
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.p-leftSide {
+    color: hsl(200, 24%, 40%);
+}
+.p-rightSide {
+    color: hsl(203, 41%, 72%);
+    text-align: center;
+}
+.p-but {
+    color: hsl(202, 55%, 16%);
+    font-weight: 800;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+}
+.main-content {
+    display: flex;
+    background-color: white;
+
+    box-shadow: 1px 1px 16px rgba(0, 0, 0, 0.247);
+
+    border-radius: 16px;
+}
+.side {
+    width: 500px;
+    padding: 30px;
+}
+#left-side {
+    display: flex;
+    flex-direction: column;
+}
+#right-side {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.table {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-bottom: 30px;
+}
+
+.input-container {
+    margin: 10px;
+    margin-inline: 0;
+
+    width: 100%;
+}
+.inputs-container {
+    display: flex;
+    justify-content:flex-start;
+    gap: 20px;
+}
+
+input {
+    height: 50px;
+    width: 100%;
+
+    text-indent: 20px; 
+
+    font-weight: bold;
+    color: hsl(202, 55%, 16%);
+    
+    border: 1px solid hsl(200, 24%, 40%);
+    border-radius: 4px;
+}
+
+
+
+.toggleBut-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    margin-bottom: 10px;
+
+    height: 50px;
+    width: 100%;
+
+    border: 1px solid hsl(200, 24%, 40%);
+    border-radius: 4px;
+}
+.toggleBut {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-left: 20px;
+
+    width: 20px;
+    height: 20px;
+
+    border-radius: 20px;
+    border: 1px solid hsl(200, 24%, 40%);
+
+    background-color: white;
+}
+.cyrcle {
+    width: 10px;
+    height: 10px;
+
+    background-color: hsl(61, 70%, 52%);
+    border-radius: 18px;
+}
+
+.butCalculete {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    margin-top: 20px;
+
+    height: 50px;
+    width: 60%;
+
+    background-color: hsl(61, 70%, 52%);
+
+    border-radius: 28px;
+    border: 0;
+}
+
+
+
+
+
+
+
+#right-side {
+    background-color: hsl(202, 55%, 16%);
+    border-radius: 0px 16px 16px 100px;
+}
