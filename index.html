@@ -13,45 +13,50 @@
 <body>
   <div class="main">
     <div class="main-content">
-      <div class="side" id="left-side">
+      <form class="side" onsubmit="return checkForm(this)" id="left-side" method="post">
         <div class="table">
             <h1 class="h1-leftSide">Mortgage Calculator</h1>
             <a href="#">Clear All</a>
         </div>
         <div class="input-container">
-            <p class="p-leftSide">Mortgage Amount</p>
-            <input class="input-empty" type="text">
+          <p class="p-leftSide">Mortgage Amount</p>
+          <div class="inputCurrent">
+            <input type="text" class="input-empty" value="300,000" id="mortgageAmount" >
+            <span class="support support-symbol">£</span>
+          </div>
         </div>
+        
         <div class="inputs-container">
             <div class="input-container">
-              <p class="p-leftSide">Mortgage Term</p>
-              <input class="input-empty" type="text">
+              <p class="p-leftSide">Mortgage Term</p>    
+              <div class="inputCurrent">
+                <input class="input-empty" id="mortgageTerm" type="text">
+                <span class="support support-text" >years</span>
+              </div>          
             </div>
             <div class="input-container">
               <p class="p-leftSide">Interest Rate</p>
-              <input class="input-empty" type="text">
+              <input class="input-empty" id="interestRate" type="text">
+              <span class="support support-text">%</span>
             </div>
         </div>
         <div class="input-container">
             <p class="p-leftSide">Mortgage Type</p>
             <div class="toggleBut-container" id="repayment" data-status="off">
-              <button class="toggleBut" data-status="off">
-                
-              </button>
+              <input class="toggleBut" type="radio">
               <p class="p-but">Repayment</p>
             </div>
-            <div class="toggleBut-container" id="repayment" data-status="off">
-              <button class="toggleBut" data-status="off">
-                
-              </button>
+            <div class="toggleBut-container" id="InterestOnly" data-status="off">
+              <input class="toggleBut" type="radio">
               <p class="p-but">Interest Only</p>
             </div>
+            
         </div>
-        <button class="butCalculete">
+        <button type="submit" class="butCalculete" >
           <img src="assets/images/icon-calculator.svg" alt="">
           <p class="p-but">Calculate Repayments</p>
         </button>
-      </div>
+      </form>
       <div class="side" id="right-side">
         <img src="assets/images/illustration-empty.svg" alt="-">
         <h1 class="h1-rightSide">Results shown here</h1>
@@ -66,6 +71,8 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
     Coded by <a href="https://github.com/aoaoaooaoaoa3301?tab=overview&from=2025-05-01&to=2025-05-04">aoaoaoaoaoa</a>.
   </div>
+
+  <script src="assets/scripts/script.js"></script>
 </body>
 </html>
 <!-- 

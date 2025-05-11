@@ -25,6 +25,9 @@ p {
     padding-top: 10px;
     padding-bottom: 10px;
 }
+button {
+    cursor: pointer;
+}
 
 .h1-leftSide {
     color: hsl(202, 55%, 16%);
@@ -93,13 +96,14 @@ p {
 }
 .inputs-container {
     display: flex;
-    justify-content:flex-start;
+
     gap: 20px;
 }
 
-input {
+.input-empty {
     height: 50px;
     width: 100%;
+    outline: none;
 
     text-indent: 20px; 
 
@@ -108,6 +112,41 @@ input {
     
     border: 1px solid hsl(200, 24%, 40%);
     border-radius: 4px;
+}
+.input-empty:focus {
+    border-color: hsl(61, 70%, 52%);
+}
+.input-empty:focus ~ .support {
+    background-color: hsl(61, 70%, 52%);
+    color: hsl(202, 55%, 16%);
+}
+.inputCurrent {
+    display: block;
+}
+
+
+#mortgageAmount {
+    text-indent: 60px; 
+}
+
+.support {
+    position: absolute;
+
+    background-color:rgb(158, 197, 255);
+    color: hsl(200, 24%, 40%);
+    font-weight: 600;
+
+    padding: 14.5px 20px 14.5px 20px;
+}
+.support-symbol {
+    transform: translate(1px, -51px);
+
+    border-radius: 4px 0px 0px 4px;
+}
+.support-text {
+    
+
+    border-radius: 0px 4px 4px 0px;
 }
 
 
