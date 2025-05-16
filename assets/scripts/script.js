@@ -1,22 +1,9 @@
 
-const btn = document.getElementById("mortgageAmount");
+const butToggles = document.querySelectorAll(".toggleBut");
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-function checkForm(element){
-    var name = element.ff.af.value;
-    console.log(name);
-    return false;
-}
+butToggles.forEach(but => {
+    but.addEventListener('click', function(){
+        but.parentElement.parentElement.style.borderColor = "hsl(61, 70%, 52%)";
+        but.parentElement.parentElement.style.backgroundColor = "hsla(61, 69.80%, 52.00%, 0.29)";
+    });
+});

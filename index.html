@@ -36,20 +36,28 @@
             </div>
             <div class="input-container">
               <p class="p-leftSide">Interest Rate</p>
-              <input class="input-empty" id="interestRate" type="text">
-              <span class="support support-text">%</span>
+              <div class="inputCurrent">
+                <input class="input-empty" id="interestRate" type="text">
+                <span class="support support-text">%</span>
+              </div>
             </div>
         </div>
         <div class="input-container">
             <p class="p-leftSide">Mortgage Type</p>
-            <div class="toggleBut-container" id="repayment" data-status="off">
-              <input class="toggleBut" type="radio">
+            <label class="toggleBut-container" id="repayment" data-status="off">
+              <label class="radio-container">
+                <input class="toggleBut" type="radio">
+                <span class="radio-custom"></span>
+              </label>
               <p class="p-but">Repayment</p>
-            </div>
-            <div class="toggleBut-container" id="InterestOnly" data-status="off">
-              <input class="toggleBut" type="radio">
+            </label>
+            <label class="toggleBut-container" id="interestOnly" data-status="off">
+              <label class="radio-container">
+                <input class="toggleBut" type="radio">
+                <span class="radio-custom"></span>
+              </label>
               <p class="p-but">Interest Only</p>
-            </div>
+            </label>
             
         </div>
         <button type="submit" class="butCalculete" >
